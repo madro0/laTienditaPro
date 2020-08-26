@@ -7,14 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 exports.PagesModule = void 0;
-var app_routing_module_1 = require("./../app-routing.module");
+var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var forms_1 = require("@angular/forms");
 var shared_module_1 = require("./../shared/shared.module");
+var components_module_1 = require("./../components/components.module");
+var app_routing_module_1 = require("./../app-routing.module");
 var pages_component_1 = require("./pages.component");
 var grafica1_component_1 = require("./grafica1/grafica1.component");
 var progress_component_1 = require("./progress/progress.component");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
-var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
 var PagesModule = /** @class */ (function () {
     function PagesModule() {
     }
@@ -33,9 +35,11 @@ var PagesModule = /** @class */ (function () {
                 pages_component_1.PagesComponent
             ],
             imports: [
+                forms_1.FormsModule,
                 common_1.CommonModule,
                 shared_module_1.SharedModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                components_module_1.ComponentsModule
             ]
         })
     ], PagesModule);

@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class PagesComponent implements OnInit {
+export class PagesComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  year = new Date().getFullYear();
 
 }

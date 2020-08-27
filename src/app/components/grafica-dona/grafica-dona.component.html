@@ -1,0 +1,15 @@
+
+<div class="card-body">
+    <h1>{{titulo}}</h1>
+    <div style="display: block;">
+        <canvas 
+        baseChart
+            [data]="doughnutChartData"
+            [colors]= "colors"
+            [labels]="doughnutChartLabels"
+            chartType="doughnut">
+
+        </canvas>
+    </div>
+
+</div>

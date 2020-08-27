@@ -9,20 +9,27 @@ exports.__esModule = true;
 exports.ComponentsModule = void 0;
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
+var forms_1 = require("@angular/forms");
+var ng2_charts_1 = require("ng2-charts");
 var incrementador_component_1 = require("./incrementador/incrementador.component");
+var grafica_dona_component_1 = require("./grafica-dona/grafica-dona.component");
 var ComponentsModule = /** @class */ (function () {
     function ComponentsModule() {
     }
     ComponentsModule = __decorate([
         core_1.NgModule({
             declarations: [
-                incrementador_component_1.IncrementadorComponent
+                incrementador_component_1.IncrementadorComponent,
+                grafica_dona_component_1.GraficaDonaComponent
             ],
             exports: [
-                incrementador_component_1.IncrementadorComponent
+                incrementador_component_1.IncrementadorComponent,
+                grafica_dona_component_1.GraficaDonaComponent
             ],
             imports: [
-                common_1.CommonModule
+                common_1.CommonModule,
+                ng2_charts_1.ChartsModule,
+                forms_1.FormsModule
             ]
         })
     ], ComponentsModule);

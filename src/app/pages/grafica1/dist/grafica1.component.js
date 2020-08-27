@@ -6,19 +6,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.PagesComponent = void 0;
+exports.Grafica1Component = void 0;
 var core_1 = require("@angular/core");
-var PagesComponent = /** @class */ (function () {
-    function PagesComponent() {
-        this.year = new Date().getFullYear();
+var Grafica1Component = /** @class */ (function () {
+    function Grafica1Component() {
+        this.Labels = ['Camisas', 'Zapatos', 'Chamarras'];
+        this.data = [
+            [68, 12, 10],
+        ];
+        this.colores = [
+            {
+                backgroundColor: [
+                    '#E65000',
+                    '#F6C4AA',
+                    '#19AFFF'
+                ]
+            }
+        ];
     }
-    PagesComponent = __decorate([
+    Grafica1Component = __decorate([
         core_1.Component({
-            selector: 'app-pages',
-            templateUrl: './pages.component.html',
+            selector: 'app-grafica1',
+            templateUrl: './grafica1.component.html',
             styles: []
         })
-    ], PagesComponent);
-    return PagesComponent;
+    ], Grafica1Component);
+    return Grafica1Component;
 }());
-exports.PagesComponent = PagesComponent;
+exports.Grafica1Component = Grafica1Component;

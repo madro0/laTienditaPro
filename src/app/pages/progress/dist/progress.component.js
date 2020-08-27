@@ -10,32 +10,23 @@ exports.ProgressComponent = void 0;
 var core_1 = require("@angular/core");
 var ProgressComponent = /** @class */ (function () {
     function ProgressComponent() {
-        this.progreso = 50;
+        this.progreso1 = 25;
+        this.progreso2 = 35;
     }
-    Object.defineProperty(ProgressComponent.prototype, "getPorcentaje", {
+    Object.defineProperty(ProgressComponent.prototype, "geProgreso1", {
         get: function () {
-            return this.progreso + "%";
+            return this.progreso1 + "%";
         },
         enumerable: false,
         configurable: true
     });
-    ProgressComponent.prototype.validarInputProgeso = function (valor) {
-        if (valor > 100) {
-            return this.progreso = 100;
-        }
-        if (valor < 0) {
-            return this.progreso = 0;
-        }
-    };
-    ProgressComponent.prototype.cambiarValor = function (valor) {
-        if (this.progreso >= 100 && valor >= 0) {
-            return this.progreso = 100;
-        }
-        if (this.progreso <= 0 && valor < 0) {
-            return this.progreso = 0;
-        }
-        this.progreso = this.progreso + valor;
-    };
+    Object.defineProperty(ProgressComponent.prototype, "geProgreso2", {
+        get: function () {
+            return this.progreso2 + "%";
+        },
+        enumerable: false,
+        configurable: true
+    });
     ProgressComponent = __decorate([
         core_1.Component({
             selector: 'app-progress',

@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class Grafica1Component  {
 
 public Labels: string[]= ['Camisas', 'Zapatos', 'Chamarras']; 
+public Labels2: string[]= ['Proveedores', 'Nominas', 'Servicios']; 
  
 public data= [
   [68, 12, 10],

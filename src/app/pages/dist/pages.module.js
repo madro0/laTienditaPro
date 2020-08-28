@@ -17,6 +17,7 @@ var pages_component_1 = require("./pages.component");
 var grafica1_component_1 = require("./grafica1/grafica1.component");
 var progress_component_1 = require("./progress/progress.component");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
+var account_settings_component_1 = require("./account-settings/account-settings.component");
 var PagesModule = /** @class */ (function () {
     function PagesModule() {
     }
@@ -26,13 +27,15 @@ var PagesModule = /** @class */ (function () {
                 dashboard_component_1.DashboardComponent,
                 progress_component_1.ProgressComponent,
                 grafica1_component_1.Grafica1Component,
-                pages_component_1.PagesComponent
+                pages_component_1.PagesComponent,
+                account_settings_component_1.AccountSettingsComponent
             ],
             exports: [
                 dashboard_component_1.DashboardComponent,
                 progress_component_1.ProgressComponent,
                 grafica1_component_1.Grafica1Component,
-                pages_component_1.PagesComponent
+                pages_component_1.PagesComponent,
+                account_settings_component_1.AccountSettingsComponent
             ],
             imports: [
                 forms_1.FormsModule,

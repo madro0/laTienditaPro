@@ -19,7 +19,7 @@
                             <a routerLink="/dashboard/acount-settings" routerLinkActive="router-link-active">Account
                                 Setting</a>
                         </li>
-                        <li><a routerLink="/login">Logout</a></li>
+                        <li><a routerLink="/login"> </a></li>
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
@@ -36,7 +36,10 @@
                     </a>
                     <ul aria-expanded="false" class="collapse">
                         <li *ngFor="let subMenuItem of item.submenu" >
-                            <a routerLink="/dashboard/{{subMenuItem.url}}" routerLinkActive="router-link-active" >{{subMenuItem.titulo}} </a>
+                            <a routerLink="/dashboard/{{subMenuItem.url}}"
+                                routerLinkActive="active" 
+                                [routerLinkActiveOptions]="{exact: true}">{{subMenuItem.titulo}} 
+                            </a>
                         </li>
                     </ul>
                 </li>
